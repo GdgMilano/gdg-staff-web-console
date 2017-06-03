@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Page from '../containers/Page'
+import Page from '../containers/page'
 import Events from '../containers/events'
 
 class IndexPage extends Component {

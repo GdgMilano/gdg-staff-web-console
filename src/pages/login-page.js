@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Page from '../containers/Page'
+import Page from '../containers/page'
 import LoginForm from '../containers/login-form'
 
 class LoginPage extends Component {

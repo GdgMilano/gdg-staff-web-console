@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Header from './header'
-import {Div} from 'glamorous'
+import { Div } from 'glamorous'
 
 class Page extends Component {
   static propTypes = {

@@ -10,7 +10,6 @@ class LoginForm extends Component {
 
   constructor() {
     super()
-
     this.state = {
       email: '',
       password: ''
@@ -53,9 +52,10 @@ class LoginForm extends Component {
               <TextField floatingLabelText="password" name="password" type="password" onChange={this.handleChange}/>
             </div>
           </CardText>
+
           <CardActions>
             <Div display="flex" justifyContent="flex-end">
-              <FlatButton primary type="submit" label="submit"/>
+              <FlatButton primary type="submit" label="login"/>
             </Div>
           </CardActions>
         </Card>

@@ -11,7 +11,7 @@ const events = [
 ]
 
 class EventsContainer extends Component {
-  render() {
+  render()   {
     return (
       <Events events={events}/>
     )

@@ -3,11 +3,19 @@ import { login } from '../firebase/actions'
 import { withRouter } from 'react-router-dom';
 import TextField from 'material-ui/TextField'
 import FlatButton from 'material-ui/FlatButton'
-import { Card, CardTitle, CardText, CardActions } from 'material-ui/Card'
-import { Form, Div } from 'glamorous'
+import { Card, CardText, CardActions } from 'material-ui/Card'
+import glamorous, { Form, Div } from 'glamorous'
+import logo from '../images/gdgmi_circle.min.jpg'
+
+const Logo = glamorous.img({
+  width: 100,
+  height: 100,
+  margin: '0 auto',
+  paddingTop: '16px',
+  display: 'block'
+})
 
 class LoginForm extends Component {
-
   constructor() {
     super()
     this.state = {
@@ -42,7 +50,7 @@ class LoginForm extends Component {
         onSubmit={this.handleSubmit}
       >
         <Card>
-          <CardTitle title="Login"/>
+          <Logo src={logo} alt=""/>
           <CardText>
             <div>
               <TextField floatingLabelText="email" name="email" type="email" onChange={this.handleChange}/>

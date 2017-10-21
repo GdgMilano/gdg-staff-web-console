@@ -6,7 +6,7 @@ import firebase from 'firebase'
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route {...rest} render={props => (
     firebase.auth().currentUser ? (
-      <Component {...props}/>
+      <Component {...props}></Component>
     ) : (
       <Redirect to={{
         pathname: '/login',

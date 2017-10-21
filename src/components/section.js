@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Col } from 'glamorous-grid'
 import { Card, CardMedia, CardText, CardActions } from 'material-ui/Card'
 import glamorous, { Div } from 'glamorous'
 import FlatButton from 'material-ui/FlatButton'
@@ -22,6 +23,7 @@ const Text = glamorous.div({
 })
 
 const Section = ({ title, mediaUrl, text, linkText, linkUrl }) => (
+    <Col span={{ xs: 12/12, md:6/12, lg: 4/12 }}>
   <Wrapper>
     <Card style={{ width: 296 }}>
       <CardMedia>
@@ -40,6 +42,7 @@ const Section = ({ title, mediaUrl, text, linkText, linkUrl }) => (
       </CardActions>
     </Card>
   </Wrapper>
+    </Col>
 )
 Section.propTypes = {
   title: PropTypes.string.isRequired,
